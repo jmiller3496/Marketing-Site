@@ -6,7 +6,7 @@ class HeaderBar extends Component {
 
     render() {
         return (
-            <Col md={12}>
+            <Col className="header-bar" md={12}>
                 <Row>
                     <Col md={5}></Col>
                     <Col md={2}>
