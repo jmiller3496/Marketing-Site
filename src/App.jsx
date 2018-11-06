@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import './bootstrap.css';
 import './about/AboutPage';
-import HeaderBar from './master/Header';
+import './../node_modules/bootstrap/dist/css/bootstrap.css' 
 import Routes from "./Routes";
-import { BrowserRouter as Router, Link } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 class App extends Component {
