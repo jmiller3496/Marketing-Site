@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import HeaderBar from "./../master/Header";
 
 class AboutPage extends Component{
      render() {
          return (
            <div>
-               <h1>About Jon Miller</h1>
+              <HeaderBar title="About Page" />
                <p>--PLACEHOLDER-- </p>
            </div> 
          );

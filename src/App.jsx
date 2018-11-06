@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import './bootstrap.css';
 import './about/AboutPage';
-import AboutPage from './about/AboutPage';
+import HeaderBar from './master/Header';
 import Routes from "./Routes";
-import { Button, Grid, Row, Col } from 'react-bootstrap'
 import { BrowserRouter as Router, Link } from "react-router-dom"
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -14,7 +13,9 @@ class App extends Component {
       <div className="App">
         <ParallaxProvider>
           <Router>
-            <Routes className="navbar" />
+            <div>
+              <Routes className="navbar" />
+            </div>
           </Router>
         </ParallaxProvider>
       </div>
