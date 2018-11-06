@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderBar from "./../master/Header";
+import './../../node_modules/bootstrap/dist/css/bootstrap.css' 
 
 class AboutPage extends Component{
      render() {

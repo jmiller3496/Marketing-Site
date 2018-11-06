@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { Button, Col, Image, Grid, Panel } from 'react-bootstrap';
+import { Button, Panel } from 'react-bootstrap';
 import HeaderBar from './../master/Header'
+import './../../node_modules/bootstrap/dist/css/bootstrap.css' 
 
 class HomePage extends Component {
     render() {
