@@ -1,10 +1,19 @@
 .App {
   text-align: center;
-  background-color: #EEEEEE;
+  background-color: #ffffff;
   padding-bottom: 10px;
 }
 html{
-  background-color: #EEEEEE;
+  background-color: #ffffff;
+}
+
+
+.panel-title{
+  font-size: 1.5em;
+}
+
+.full-row{
+  width: 100%;
 }
 
 .header-bar{
