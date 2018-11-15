@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeaderBar from "./../master/Header";
+import HeaderBar from "./../master/HeaderBar";
 
 class AboutPage extends Component{
      render() {
