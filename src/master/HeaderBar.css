@@ -1,0 +1,28 @@
+.header-bar{
+    padding: 0;    
+}
+.header-bar .container{
+    left: 0;
+    right: 0;
+    width: 100vw;
+}
+.container{
+    width: 100vw;
+    left: 0;
+    right: 0;
+}
+
+.header-bar .header-link{
+    height: 2em;
+}
+.header-bar .header-link:hover{
+    margin: 0;
+    transition: 400ms;
+    background: lightblue;
+}
+.header-bar .header-link:hover a{
+    color:#1E1E1F;
+}
+.header-bar .header-link a{
+    color:skyblue;
+}

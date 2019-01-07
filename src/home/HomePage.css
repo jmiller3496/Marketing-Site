@@ -1,0 +1,130 @@
+body{
+    color: lightslategray;
+}
+
+.description-verb-list span{
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.go-places {
+    overflow: hidden;
+    width: 112px;
+}
+
+.go-places img{
+    margin-left: 16px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.go-places:hover img, .go-places:active img{
+    visibility: visible;
+    animation: crawlRotateZoom 1.25s infinite linear;
+}
+
+.description-verb-list span:hover span, .description-verb-list span:active span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.run-trails {
+    overflow: hidden;
+}
+
+.run-trails img{
+    visibility: hidden;
+    margin-left: 16px;
+}
+
+.run-trails:hover img{
+    animation: zoomUpThenRight 800ms infinite ease-in;
+    visibility: visible;
+    overflow: hidden;
+}
+
+
+.tell-stories{
+    overflow: hidden;
+    height: 24px;
+}
+
+.tell-stories img{
+    visibility: hidden;
+}
+
+.tell-stories:hover img, .tell-stories:active img{
+    animation: zoomDown 2s infinite linear;
+    visibility: visible;
+}
+
+.volunteer img.ShovelIcon{
+    position: absolute;
+}
+
+.volunteer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.build-things:hover img, .build-things:active img {
+    visibility: visible;
+    animation: twoSpin 4s infinite ease-in-out;
+}
+
+.build-things:hover img.LittleGearIcon, .build-things:active img.LittleGearIcon {
+    visibility: visible;
+    animation: twoSpin 4s infinite ease-in-out reverse;
+}
+
+.write-software{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.write-software:hover .UnderscoreIcon, .write-software:active .UnderscoreIcon{
+    text-decoration: none !important;
+}
+
+.write-software ::after {
+    content: " ";
+    color: skyblue;
+}
+
+.write-software:hover .UnderscoreIcon::after, .write-software:active .UnderscoreIcon::after {
+    text-decoration: none !important;
+    content: "9";
+    color: skyblue;
+    animation: textAnimation 15s linear infinite;
+}
+
+    .build-things:hover img.LittleGearIcon, .build-things:active img.LittleGearIcon {
+        height: 1.3em;
+    }
+
+    .build-things:hover img, .build-things:active img {
+        height: 1.5em;
+    }
+
+    .volunteer img{
+        height: 2.75em !important;
+        width: 3em !important;
+    }
+    
+    .tell-stories:hover img, .tell-stories:active img{
+        height: 2vw;
+    }
+
+    .description-verb-list span{
+        height: 2em;
+    }
+
+    .description-verb-list span:hover img{
+        height: 1em;
+    }
+
+    .description-verb-list span.go-places:hover img{
+        height: 1em;
+    }

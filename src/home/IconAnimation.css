@@ -1,0 +1,147 @@
+
+.build-things img{
+    visibility: hidden;
+    height: 1px;
+    transition: all 200ms;
+}
+
+@media (orientation: landscape){
+
+    .volunteer img.ShovelIcon{
+        visibility: hidden;
+        margin-top: -10vw;
+        transition: all 300ms;
+    }
+    
+    .volunteer:hover img.ShovelIcon, .volunteer:active img.ShovelIcon{
+        margin-top: 0;
+        visibility: visible;
+    }
+
+    @keyframes twoSpin{
+        from{
+            transform:  rotate(0deg);
+        }
+        to{
+            transform:  rotate(720deg);
+        }
+    }
+
+    @keyframes zoomUpThenRight{
+        0%{
+            transform:  translate(-3vh, -2vh);
+        }
+        20%{
+            transform:  translate(0, 0);
+        }
+        50%{
+            transform:  translate(0, 0);
+        }
+        70%{
+            transform:  translate(10vh, 0);
+        }
+        80%{
+            transform:  translate(10vh, 0);
+        }
+        100%{
+            transform:  translate(25vh, -10vh);
+        }
+    }
+
+    @keyframes zoomDown{
+        from{
+            transform:  translate(0, -6vh) rotate(0deg);
+        }
+        to{
+            transform:  translate(0, 6vh) rotate(270deg);
+        }
+    }
+
+    @keyframes crawlRotateZoom{
+        0%{
+            transform:  translate(-3vh, -2.75vh) rotate(30deg);   
+        }
+        25%{
+            transform:  translate(0, 0) rotate(30deg);
+        }
+        50%{
+            transform:  translate(3vh, 0) rotate(10deg);
+        }
+        75%{
+            transform:  translate(9vh, -4vh) rotate(-15deg);
+        }
+        100%{
+            transform:  translate(9vh, -6vh);
+        }
+    }
+}
+@media (orientation: portrait){
+
+    .volunteer img.ShovelIcon{
+        visibility: hidden;
+        margin-top: -10vh;
+        transition: all 300ms;
+    }
+    
+    .volunteer:hover img.ShovelIcon, .volunteer:active img.ShovelIcon{
+        margin-top: 0;
+        visibility: visible;
+    }
+
+    @keyframes twoSpin{
+        from{
+            transform:  rotate(0deg);
+        }
+        to{
+            transform:  rotate(720deg);
+        }
+    }
+
+    @keyframes zoomUpThenRight{
+        0%{
+            transform:  translate(-4vw, -4vw);
+        }
+        20%{
+            transform:  translate(0, 0);
+        }
+        50%{
+            transform:  translate(0, 0);
+        }
+        70%{
+            transform:  translate(10vw, 0);
+        }
+        80%{
+            transform:  translate(10vw, 0);
+        }
+        100%{
+            transform:  translate(25vw, -10vw);
+        }
+    }
+
+    @keyframes zoomDown{
+        from{
+            transform:  translate(0, -4vw) rotate(0deg);
+        }
+        to{
+            transform:  translate(0, 4vw) rotate(270deg);
+        }
+    }
+
+    @keyframes crawlRotateZoom{
+        0%{
+            transform:  translate(-5vw, -3vw) rotate(30deg);   
+        }
+        25%{
+            transform:  translate(0, 0) rotate(30deg);
+        }
+        50%{
+            transform:  translate(5vw, 0) rotate(10deg);
+        }
+        75%{
+            transform:  translate(15vw, -5vw) rotate(-15deg);
+        }
+        100%{
+            transform:  translate(20vw, -6vw);
+        }
+    }
+}
