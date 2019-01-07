@@ -21,6 +21,7 @@ class GoogleCalendarAPIService {
     fs.readFile(TOKEN_PATH, (err, token) => {
       if (err) return this.getAccessToken(oAuth2Client, callback);
       oAuth2Client.setCredentials(JSON.parse(token));
+      console.log("AHAHA" + JSON.parse(token));
       callback(oAuth2Client);
     });
   }
@@ -110,7 +111,7 @@ class GoogleCalendarAPIService {
             freeTimes.push({ freeTimeStart, freeTimeEnd });
           }
         }
-        // console.log(freeTimes);
+        console.log(freeTimes);
       }
 
       freeTimes = freeTimes.filter((timeRange) => { return new Date(timeRange.freeTimeEnd).getTime() !== new Date(timeRange.freeTimeStart).getTime() });

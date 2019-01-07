@@ -1,0 +1,306 @@
+/*Is there a better way? Can this be smoother?*/
+@keyframes textAnimation{
+    0%{
+        content: " "
+    }
+    1%{
+        content: "_"
+    }
+    3%{
+        content: "_"
+    }
+    4%{
+        content: " "
+    }
+    5%{
+        content: " "
+    }
+    6%{
+        content: "_"
+    }
+    6%{
+        content: "R_"
+    }
+    7%{
+        content: "RE_"
+    }
+    8%{
+        content: "REA_"
+    }
+    9%{
+        content: "REAC_"
+    }
+    10%{
+        content: "REACT_"
+    }
+    11%{
+        content: "REACTJ_"
+    }
+    12%{
+        content: "REACTJS_"
+    }
+    13%{
+        content: "REACTJS"
+    }
+    14%{
+        content: "REACTJS"
+    }
+    15%{
+        content: "REACTJS_"
+    }
+    16%{
+        content: "REACTJS_"
+    }
+    17%{
+        content: "REACTJS"
+    }
+    18%{
+        content: "REACTJS"
+    }
+    19%{
+        content: "REACTJS_"
+    }
+    20%{
+        content: "REACTJS_"
+    }
+    21%{
+        content: "REACTJ_"
+    }
+    22%{
+        content: "REACT_"
+    }
+    23%{
+        content: "REAC_"
+    }
+    24%{
+        content: "REA_"
+    }
+    25%{
+        content: "RE_"
+    }
+    26%{
+        content: "R_"
+    }
+    27%{
+        content: "_"
+    }
+    28%{
+        content: "_"
+    }
+    29%{
+        content: " "
+    }
+    30%{
+        content: " "
+    }
+    31%{
+        content: "_"
+    }
+    32%{
+        content: "A_"
+    }
+    33%{
+        content: "AN_"
+    }
+    34%{
+        content: "ANG_"
+    }
+    35%{
+        content: "ANGU_"
+    }
+    36%{
+        content: "ANGUL_"
+    }
+    37%{
+        content: "ANGULA_"
+    }
+    38%{
+        content: "ANGULAR_"
+    }
+    39%{
+        content: "ANGULAR_"
+    }
+    40%{
+        content: "ANGULAR"
+    }
+    41%{
+        content: "ANGULAR"
+    }
+    42%{
+        content: "ANGULAR_"
+    }
+    43%{
+        content: "ANGULAR_"
+    }
+    44%{
+        content: "ANGULAR"
+    }
+    45%{
+        content: "ANGULAR"
+    }
+    46%{
+        content: "ANGULAR_"
+    }
+    47%{
+        content: "ANGULAR_"
+    }
+    48%{
+        content: "ANGULA_"
+    }
+    49%{
+        content: "ANGUL_"
+    }
+    50%{
+        content: "ANGU_"
+    }
+    51%{
+        content: "ANG_"
+    }
+    52%{
+        content: "AN_"
+    }
+    53%{
+        content: "A_"
+    }
+    54%{
+        content: "_"
+    }
+    55%{
+        content: "_"
+    }
+    56%{
+        content: " "
+    }
+    57%{
+        content: " "
+    }
+    58%{
+        content: "_"
+    }
+    59%{
+        content: "_"
+    }
+    60%{
+        content: " "
+    }
+    61%{
+        content: " "
+    }
+    62%{
+        content: "_"
+    }
+    63%{
+        content: "._"
+    }
+    64%{
+        content: ".N_"
+    }
+    65%{
+        content: ".NE_"
+    }
+    66%{
+        content: ".NET_"
+    }
+    67%{
+        content: ".NETC_"
+    }
+    68%{
+        content: ".NETCO_"
+    }
+    69%{
+        content: ".NETCOR_"
+    }
+    70%{
+        content: ".NETCORE_"
+    }
+    71%{
+        content: ".NETCORE_"
+    }
+    72%{
+        content: ".NETCORE"
+    }
+    73%{
+        content: ".NETCORE"
+    }
+    74%{
+        content: ".NETCORE_"
+    }
+    75%{
+        content: ".NETCORE_"
+    }
+    76%{
+        content: ".NETCORE"
+    }
+    77%{
+        content: ".NETCORE"
+    }
+    78%{
+        content: ".NETCORE_"
+    }
+    79%{
+        content: ".NETCORE_"
+    }
+    80%{
+        content: ".NETCORE"
+    }
+    81%{
+        content: ".NETCORE"
+    }
+    82%{
+        content: ".NETCORE_"
+    }
+    83%{
+        content: ".NETCOR_"
+    }
+    84%{
+        content: ".NETCO_"
+    }
+    85%{
+        content: ".NETC_"
+    }
+    86%{
+        content: ".NET_"
+    }
+    87%{
+        content: ".NE_"
+    }
+    88%{
+        content: ".N_"
+    }
+    89%{
+        content: "._"
+    }
+    90%{
+        content: "_"
+    }
+    91%{
+        content: "_"
+    }
+    92%{
+        content: " "
+    }
+    93%{
+        content: " "
+    }
+    94%{
+        content: "_"
+    }
+    95%{
+        content: "_"
+    }
+    96%{
+        content: " "
+    }
+    97%{
+        content: " "
+    }
+    98%{
+        content: "_"
+    }
+    99%{
+        content: "_"
+    }
+    100%{
+        content: " "
+    }
+}

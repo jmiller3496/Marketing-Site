@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import HeaderBar from './../master/HeaderBar'
 import DaySchedule from './DaySchedule';
-import GetAPIData from "./../helpers/RestHelper";
 import { PanelGroup, Row, Col, Grid, Modal, Button } from 'react-bootstrap';
+import { GetSchedulerData } from "./../helpers/RestHelper";
 
 class SchedulerPage extends Component {
   constructor(props, context) {
@@ -12,7 +12,8 @@ class SchedulerPage extends Component {
     this.state = {
       activeKey: 1,
       show: false,
-      modalTitle: ""
+      modalTitle: "",
+      
     };
   }
 
@@ -30,12 +31,18 @@ class SchedulerPage extends Component {
   }
 
   handleModalShow(dayKey) {
+    this.getDaySchedule();
     this.setState({ show: true, modalTitle: this.dayNames[dayKey] });
   }
 
   getDaySchedule(){
-      let data = GetAPIData();
+      GetSchedulerData().then(data => {
+        this.setState({
+          apiRepsonse: data
+        })
+        console.log(data);
       return data;
+    });
   }
 
   renderDays = () => {
@@ -43,7 +50,7 @@ class SchedulerPage extends Component {
     let today = new Date();
     let dayOfWeek = today.getDay();
     for (var i = dayOfWeek; i < 8; i++) {
-      if (i == 7) {
+      if (i === 7) {
         days.push(
           <Col key={i} className="col-md">
             <DaySchedule eventKey={0} dayName={this.dayNames[0]} showModal={this.handleModalShow} />
@@ -79,7 +86,7 @@ class SchedulerPage extends Component {
             <Modal.Title>{this.state.modalTitle}</Modal.Title>
           </Modal.Header>
 
-          <Modal.Body><h4>{GetAPIData()}</h4></Modal.Body>
+          <Modal.Body><h4>{this.state.apiRepsonse}</h4></Modal.Body>
 
           <Modal.Footer>
             <Button onClick={() => { this.setState({ show: false }) }}>Close</Button>
