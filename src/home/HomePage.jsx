@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 import { Col, Panel } from 'react-bootstrap';
 import HeaderBar from './../master/HeaderBar';
 import './IconAnimation.css';
@@ -10,6 +11,11 @@ import Shovel from './../img/ShovelIcon.svg';
 import Runner from './../img/RunnerIcon.svg';
 import Airplane from './../img/AirplaneIcon.svg';
 import HoodieSelfie from './../img/HoodieSelfieNoLogo.jpg'
+=======
+import { Button, Panel } from 'react-bootstrap';
+import HeaderBar from './../master/Header'
+import './../../node_modules/bootstrap/dist/css/bootstrap.css' 
+>>>>>>> master
 
 class HomePage extends Component {
     render() {
