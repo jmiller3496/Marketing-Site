@@ -23,7 +23,7 @@ class HeaderBar extends Component {
             <Link to="/" >About Me</Link>
           </Col>
           <Col md={2} sm={12} className="header-link">
-            <Link to="/" >My Software</Link>
+            <Link to="/software" >My Software</Link>
           </Col>
           <Col md={2} sm={12} className="header-link">
             <Link to="/" >My Hardware</Link>
