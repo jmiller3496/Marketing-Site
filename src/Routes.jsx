@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import AboutPage from "./about/AboutPage";
 import HomePage from "./home/HomePage";
-import SchedulerPage from "./scheduler/SchedulerPage";
+import SoftwarePage from "./software/SoftwarePage";
 
 class Routes extends Component {
     render() {
@@ -10,7 +10,7 @@ class Routes extends Component {
             <div>
                 <Route path="/about" component={AboutPage} />
                 <Route path="/home" component={HomePage} />
-                <Route path="/scheduler" component={SchedulerPage} />
+                <Route path="/software" component={SoftwarePage} />
                 <Route path="/" exact component={HomePage} />
             </div>
         )

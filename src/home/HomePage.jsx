@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Panel } from 'react-bootstrap';
+import { Panel } from 'react-bootstrap';
 import HeaderBar from './../master/HeaderBar';
 import './IconAnimation.css';
 import './TextAnimation.css';
@@ -32,9 +32,11 @@ class HomePage extends Component {
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="write-software">
+                            <a href="/software" style={{ color: 'inherit', textDecoration: 'none'}}>
                                 <span style={{ textAlign: "left", width: "100%" }}>I write software</span>
                                 &nbsp;&nbsp;
                             <span className="UnderscoreIcon">&nbsp;</span>
+                            </a>
                             </span>
                             <br />
                             <br />
