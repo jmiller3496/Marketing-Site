@@ -18,11 +18,11 @@
 .header-bar .header-link:hover{
     margin: 0;
     transition: 400ms;
-    background: lightblue;
+    background: lightsteelblue;
 }
 .header-bar .header-link:hover a{
     color:#1E1E1F;
 }
 .header-bar .header-link a{
-    color:skyblue;
+    color:lightsteelblue;
 }

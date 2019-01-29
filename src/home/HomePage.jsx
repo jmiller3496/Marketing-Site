@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 import { Col, Panel } from 'react-bootstrap';
 import HeaderBar from './../master/HeaderBar';
 import './IconAnimation.css';
@@ -11,17 +10,12 @@ import Shovel from './../img/ShovelIcon.svg';
 import Runner from './../img/RunnerIcon.svg';
 import Airplane from './../img/AirplaneIcon.svg';
 import HoodieSelfie from './../img/HoodieSelfieNoLogo.jpg'
-=======
-import { Button, Panel } from 'react-bootstrap';
-import HeaderBar from './../master/Header'
-import './../../node_modules/bootstrap/dist/css/bootstrap.css' 
->>>>>>> master
 
 class HomePage extends Component {
     render() {
         return (
             <div>
-                <HeaderBar title="JM Miller Consulting" />
+                <HeaderBar title="JM Miller - Salaried Consultant" />
                 <Panel className="page-contents-panel" style={{ float: "left", width: "66%", margin: "0 16%" }}>
                     <hr />
                     <h4>Jonathan M Miller</h4>
@@ -29,7 +23,7 @@ class HomePage extends Component {
                     <br />
                     <div className="text-section">
                         <div className="image-container col-lg-6" style={{ float: "left" }}>
-                            <span className="image-label" >Working hard until 5AM @ CES 2019</span>
+                            <span className="image-label" >Working late, 5AM @ CES 2019</span>
                             <img className="" src={HoodieSelfie}></img>
                         </div>
                         <div className="description-verb-list col-lg-6 col-sm-12" style={{ float: "left", textAlign: "left" }}>

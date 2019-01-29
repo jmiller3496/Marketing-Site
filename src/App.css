@@ -5,7 +5,7 @@
 }
 
 a {
-  color: skyblue;
+  color: lightsteelblue;
 }
 
 html{
@@ -36,7 +36,7 @@ h1, h2, h3, h4{
 }
 
 .header-bar{
-  color: lightblue; 
+  color: lightsteelblue; 
   background-color: #222222;
   text-transform: uppercase;
   z-index: 100;
@@ -107,7 +107,7 @@ nav div.container{
 }
 
 hr{
-  background: lightblue;
+  background: lightsteelblue;
 }
 
 div:hover > .stylized-underline, div:active > .stylized-underline{

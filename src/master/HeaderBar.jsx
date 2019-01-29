@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Col, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Logo from './../img/Logo.png';
+import Logo from './../img/RHLogo.gif';
 import './../../node_modules/bootstrap/dist/css/bootstrap.css'
 import './HeaderBar.css'
 
