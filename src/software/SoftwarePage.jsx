@@ -12,6 +12,7 @@ import JavaScriptScore from "./../img/PluralSight/JS.PNG";
 import ApsMvcScore from "./../img/PluralSight/MVC.PNG";
 import PythonScore from "./../img/PluralSight/Python.PNG";
 import ReactScore from "./../img/PluralSight/React.PNG";
+import './SoftwarePage.css';
 
 class SoftwarePage extends Component {
     constructor(props) {
@@ -22,22 +23,22 @@ class SoftwarePage extends Component {
         return (
             <div>
                 <HeaderBar title="JM Miller - Salaried Consultant" />
-                <Panel className="page-contents-panel" style={{ float: "left", width: "66%", margin: "0 16%" }}>
+                <Panel className="page-contents-panel" style={{ }}>
                     <hr />
                     <div className="text-section">
-                        <ul style={{listStyle: 'none'}}>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={AngularScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={CSharpScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={CssScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={DevOpsScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={DockerScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={GitScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={HtmlScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={JavaScriptScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={ApsMvcScore} /></li>
-                            <li style={{float:'left', width: '300px', height: '350p', padding: '1px'}}><img src={PythonScore} /></li>
-                            <li style={{float:'right', width: '300px', height: '350p', padding: '1px'}}><img src={ReactScore} /></li>
-                        </ul>
+                        <div className="skill-score-list" style={{listStyle: 'none'}}>
+                            <img src={AngularScore} />
+                            <img src={CSharpScore} />
+                            <img src={CssScore} />
+                            <img src={DevOpsScore} />
+                            <img src={DockerScore} />
+                            <img src={GitScore} />
+                            <img src={HtmlScore} />
+                            <img src={JavaScriptScore} />
+                            <img src={ApsMvcScore} />
+                            <img src={PythonScore} />
+                            <img src={ReactScore} />
+                        </div>
                     </div>
                 </Panel>
             </div>
