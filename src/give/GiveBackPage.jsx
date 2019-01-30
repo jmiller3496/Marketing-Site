@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HeaderBar from "./../master/HeaderBar";
 
-class AboutPage extends Component{
+class GiveBackPage extends Component{
      render() {
          return (
            <div>
@@ -12,4 +12,4 @@ class AboutPage extends Component{
     }
 }
 
-export default AboutPage;
+export default GiveBackPage;
