@@ -16,7 +16,7 @@ class HomePage extends Component {
         return (
             <div>
                 <HeaderBar title="JM Miller - Salaried Consultant" />
-                <Panel className="page-contents-panel" style={{ float: "left", width: "66%", margin: "0 16%" }}>
+                <Panel className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
                     <hr />
                     <h4>Jonathan M Miller</h4>
                     <h5> Salaried Professional Consultant </h5>
@@ -32,56 +32,66 @@ class HomePage extends Component {
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="write-software">
-                            <a href="/software" style={{ color: 'inherit', textDecoration: 'none'}}>
-                                <span style={{ textAlign: "left", width: "100%" }}>I write software</span>
-                                &nbsp;&nbsp;
-                            <span className="UnderscoreIcon">&nbsp;</span>
-                            </a>
+                                <a href="/software" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span style={{ textAlign: "left", width: "100%" }}>I write software</span>
+                                    &nbsp;&nbsp;
+                                    <span className="UnderscoreIcon">&nbsp;</span>
+                                </a>
                             </span>
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="build-things">
-                                <span>I build hardware</span>
-                                &nbsp;&nbsp;
-                                <img className="GearIcon" src={Gear} />
-                                <img className="LittleGearIcon" src={Gear} />
+                                <a href="/hardware" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>I build hardware</span>
+                                    &nbsp;&nbsp;
+                                    <img className="GearIcon" src={Gear} />
+                                    <img className="LittleGearIcon" src={Gear} />
+                                </a>
                             </span>
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="volunteer">
-                                <span>I give back</span>
-                                &nbsp;&nbsp;
-                            <img className="ShovelIcon" src={Shovel} />
-                                <span>
-                                </span>
+                                <a href="/give" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>I give back</span>
+                                    &nbsp;&nbsp;
+                                    <img className="ShovelIcon" src={Shovel} />
+                                    <span>
+                                    </span>
+                                </a>
                             </span>
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="run-trails">
-                                <span>I run races</span>
-                                &nbsp;&nbsp;
-                            <span>
-                                    <img className="RunnerIcon" src={Runner} />
-                                </span>
+                                <a href="/writing/fitness" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>I run races</span>
+                                    &nbsp;&nbsp;
+                                    <span>
+                                        <img className="RunnerIcon" src={Runner} />
+                                    </span>
+                                </a>
                             </span>
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="go-places">
-                                <span>I go places</span>
-                                &nbsp;&nbsp;
-                            <span>
-                                    <img className="AirplaneIcon" src={Airplane} />
-                                </span>
+                                <a href="/writing/travel" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>I go places</span>
+                                    &nbsp;&nbsp;
+                                    <span>
+                                        <img className="AirplaneIcon" src={Airplane} />
+                                    </span>
+                                </a>
                             </span>
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="tell-stories">
-                                <span>I tell stories</span>
-                                &nbsp;&nbsp;
-                            <span>
-                                    <img className="BookIcon" src={Book} />
-                                </span>
-                                <br />
+                                <a href="/writing/stories" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>I tell stories</span>
+                                    &nbsp;&nbsp;
+                                    <span>
+                                        <img className="BookIcon" src={Book} />
+                                    </span>
+                                    <br />
+                                </a>
                             </span>
                             <br />
                             <br />
@@ -102,9 +112,13 @@ class HomePage extends Component {
                                 In any case, I'm glad you're here. I hope you'll stay a while and take a look at the work I've done, the places I've been, and the stories I've told.
                         </p>
                             <div className="hyperlink">
-                                <h6>- Contact Me -</h6>
-                                <hr className="stylized-underline" />
-                                <br/>
+                                <a href="/contact" className="stylized-underline">
+                                    <div>
+                                        <h6>- Contact Me -</h6>
+                                        <hr className="stylized-underline" />
+                                        <br />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
