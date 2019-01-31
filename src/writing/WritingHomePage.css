@@ -1,29 +1,40 @@
-div.image-container img.col-md-12{
-    height: 33vw;
-    overflow: hidden;
-    padding: 0;
-    transition: 500ms;
-}
-div.image-container{
-    height: 33vw;
-    overflow: hidden;
-}
 
 .image-label{
     z-index: 100;
     cursor: pointer;
 }
 
-@media screen and(orientation: portrait){
-    div.image-container img.col-md-12{
-        height:  100vw!important;
-        overflow: hidden;
-        padding: 0;
-        transition: 500ms;
-    }
-    
-div.image-container{
-        height: 100vw !important;
+a.image-container img.col-md-12{
+    overflow: hidden;
+    width: 100%;
+    padding: 0 !important;
+    /* transition: 500ms; */
+}
+
+a.image-container{
+    padding: 0 !important;
     overflow: hidden;
 }
+
+a.image-container {
+    text-decoration: none;
+}
+
+@media (orientation: landscape){
+    a.image-container img.col-md-12{
+        height: 33vw;
+    }
+    a.image-container{
+        height: 33vw;
+    }
+}
+
+@media (orientation: portrait){
+    a.image-container img.col-md-12 {
+        height:  80vw!important;
+    }
+    
+    a.image-container{
+        height: 80vw !important;
+    }
 }
