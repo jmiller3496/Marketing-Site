@@ -4,8 +4,22 @@
   padding-bottom: 10px;
 }
 
+div a, div a:hover{
+  color: lightsteelblue;
+}
+
+.center{
+  text-align: center;
+}
+
+.page-contents-panel{
+  float: "left";
+  width: "66%"; 
+  margin: "0 16%"; 
+}
+
 a {
-  color: skyblue;
+  color: lightsteelblue;
 }
 
 html{
@@ -36,7 +50,7 @@ h1, h2, h3, h4{
 }
 
 .header-bar{
-  color: lightblue; 
+  color: lightsteelblue; 
   background-color: #222222;
   text-transform: uppercase;
   z-index: 100;
@@ -84,6 +98,11 @@ div.image-container img{
   width: 100%;
 }
 
+address{
+  padding-left: 2em;
+  color: lightsteelblue;
+}
+
 .image-label{
   left: 0;
   top: 0;
@@ -94,6 +113,12 @@ div.image-container img{
   opacity: 0;
   position: absolute;
   height: 100%;
+  transition: 50ms;
+}
+
+.image-container:hover .image-label{
+  opacity: 0.7;
+
 }
 
 .image-label:hover, .image-label:active{
@@ -107,7 +132,7 @@ nav div.container{
 }
 
 hr{
-  background: lightblue;
+  background: lightsteelblue;
 }
 
 div:hover > .stylized-underline, div:active > .stylized-underline{
@@ -117,10 +142,14 @@ div:hover > .stylized-underline, div:active > .stylized-underline{
   cursor: pointer !important;
 }
 
-hr.stylized-underline{
+hr.stylized-underline {
   width: 2%; 
   margin-top: 0;
   transition: 500ms all;
+}
+
+a.stylized-underline {
+  text-decoration: none !important;
 }
 
 @media screen and(orientation: landscape){

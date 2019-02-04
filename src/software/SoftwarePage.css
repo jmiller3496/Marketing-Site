@@ -1,0 +1,13 @@
+.skill-score-list {
+    float:left; 
+    width: 68%; 
+    margin: 0 16%; 
+    padding: 0 0; 
+}
+
+.skill-score-list img {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+    width: 15%;
+}

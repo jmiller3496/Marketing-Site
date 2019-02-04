@@ -18,11 +18,16 @@
 .header-bar .header-link:hover{
     margin: 0;
     transition: 400ms;
-    background: lightblue;
+    background: lightsteelblue;
+    text-decoration: underline #1E1E1F;
+    color: #1E1E1F;
+    cursor: pointer;
 }
 .header-bar .header-link:hover a{
+    text-decoration: #1E1E1F;
     color:#1E1E1F;
 }
 .header-bar .header-link a{
-    color:skyblue;
+    text-decoration: underline #1E1E1F !important;
+    color:lightsteelblue;
 }
