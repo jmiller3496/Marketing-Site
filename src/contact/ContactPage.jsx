@@ -37,6 +37,7 @@ class ContactPage extends Component {
                                 <a href="mailto:mail@jm-miller.com"> Mail@JM-Miller.com</a>
                             </address>
                         </p>
+                        <p>Find me on <a target="_blank" href="https://www.github.com/jmiller3496">GitHub</a>!</p>
                     </div>
                 </Panel>
             </div>
