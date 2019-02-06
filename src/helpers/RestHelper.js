@@ -1,10 +1,11 @@
 import axios from "axios";
 
-function GetSchedulerData(id) {
-    return axios.get("http://localhost:7777/api/scheduler/test", {
-        // params: {
-        //     id: id
-        // },
+const GetArticles = (typeId = null) => {
+    let typeIdString = "";
+    if(typeId){
+        typeIdString = `?typeId=${typeId}`
+    }
+    return axios.get(`http://localhost:8080/GetArticles${typeIdString}`, {
         crossDomain: false
     }).then((response) => {
         console.log(response.data);
@@ -12,4 +13,4 @@ function GetSchedulerData(id) {
     });
 }
 
-export { GetSchedulerData };
+export { GetArticles };

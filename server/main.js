@@ -1,17 +1,21 @@
-const express = require('express');
-const schedulerRoutes = require('./routes/schedulerAPIRoutes');
-const calendarService = require('./services/googleCalendarService');
-const fileSystem = require('fs');
-const app = express();
-const cors = require("cors");
-const port = 7777;
+const Express = require('express');
+const SQLRoutes = require('./routes/sql-routes').SqlRoutes;
+const SQLService = require('./services/sql-service').SqlService;
+const SQL = require('mssql');
+const FileSystem = require('fs');
+const App = Express();
+const CORS = require("cors");
+const Port = 8080;
 
-app.use(cors());
+let sqlService = new SQLService(App, FileSystem, SQL);
+let sqlRoutes = new SQLRoutes(App, sqlService);
 
-app.get('/', function (req, res) {
-    res.send('App Started...');
+App.use(CORS());
+
+App.get('/', (request, response) => {
+    response.send('App Running...');
 });
 
-schedulerRoutes.initialize(app, new calendarService.CalendarAPIService(fileSystem), fileSystem);
+sqlRoutes.RegisterRoutes();
 
-app.use(express.static(__dirname + "/../.tmp")).listen(port, () => { console.log(`App Started listening on Port ${port}...`) });
+App.use(Express.static(__dirname + "/../.tmp")).listen(Port, () => { console.log(`App Started listening on Port ${Port}...`) });

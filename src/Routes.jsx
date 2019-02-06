@@ -22,9 +22,9 @@ class Routes extends Component {
                 <Route path="/software" component={SoftwarePage} />
                 <Route path="/hardware" component={ConstructionPage} />
                 <Route path="/writing" exact component={WritingHomePage} />
-                <Route path="/writing/fitness" component={UnderConstructionPage} />
-                <Route path="/writing/travel" component={UnderConstructionPage} />
-                <Route path="/writing/creative" component={UnderConstructionPage} />
+                <Route path="/writing/fitness" component={FitnessWritingPage} />
+                <Route path="/writing/travel" component={TravelWritingPage} />
+                <Route path="/writing/creative" component={CreativeWritingPage} />
                 <Route path="/" exact component={HomePage} />
             </div>
         )
