@@ -24,29 +24,29 @@ class HeaderBar extends Component {
       <div className="header-bar">
         <Navbar className="header-bar nav">
           <Link to="/about" className="header-link col-md-2 col-sm-12" >
-            <a>About Me</a>
+            <span>About Me</span>
           </Link>
           <Link to="/software" className="header-link col-md-2 col-sm-12">
-            <a>My Software</a>
+            <span>My Software</span>
           </Link>
           <Link to="/hardware" className="header-link col-md-2 col-sm-12" >
-            <a>My Hardware</a>
+            <span>My Hardware</span>
           </Link>
           <Link to="/writing" className="header-link col-md-2 col-sm-12" >
-            <a>My Writing</a>
+            <span>My Writing</span>
           </Link>
           <Link to="/give" className="header-link col-md-2 col-sm-12" >
-            <a>How I Give Back</a>
+            <span>How I Give Back</span>
           </Link>
           <Link to="/contact" className="header-link col-md-2 col-sm-12" >
-            <a>Contact Me</a>
+            <span>Contact Me</span>
           </Link>
         </Navbar>
         <Col md={12}>
           <h3 id="page-title" ref={titleRef => this.titleRef = titleRef}>
             {this.props.title}
           </h3>
-          <a href="https://www.roberthalf.com/work-with-us/our-services/long-term-project-consultants"><img style={{ width: "100px" }} src={Logo} /></a>
+          <span href="https://www.roberthalf.com/work-with-us/our-services/long-term-project-consultants"><img style={{ width: "100px" }} src={Logo} /></span>
         </Col>
       </div>
     );
