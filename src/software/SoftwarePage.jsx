@@ -29,7 +29,7 @@ class SoftwarePage extends Component {
                                 <img src={process.env.PUBLIC_URL + "/img/" + skill.ImageURL} alt={skill.Title} />
                                 <br />
                                 <br />
-                                <div dangerouslySetInnerHTML={{ __html: skill.TextContents }}></div>
+                                <div className="html-text-content-area" dangerouslySetInnerHTML={{ __html: skill.TextContents }}></div>
                                 <hr />
                             </div>))}
                         </div>
