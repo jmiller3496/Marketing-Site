@@ -9,7 +9,7 @@ class SqlRoutes {
     }
 
     RegisterRoutes() {
-        App.get('/GetArticles', (request, response) => {
+        App.get('/API/GetArticles', (request, response) => {
             SQLService.GetArticles(request, response);
         });
     }

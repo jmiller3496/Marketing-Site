@@ -23,10 +23,10 @@ class SqlService {
                 let result = [];
                 if (request.query.typeId) {
 
-                    result = await SQL.query(`SELECT * FROM Article WHERE ArticleType = '${request.query.typeId}'`);
+                    result = await SQL.query(`SELECT * FROM Article WHERE ArticleType = '${request.query.typeId}' AND Enabled = 1`);
                 }
                 else {
-                    result = await SQL.query(`SELECT * FROM Article`);
+                    result = await SQL.query(`SELECT * FROM Article WHERE Enabled = 1`);
 
                 }
                 response.send(result);
