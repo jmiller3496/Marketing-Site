@@ -11,7 +11,6 @@ class HeaderBar extends Component {
   constructor() {
     super();
     let locationParts = window.location.href.split('/');
-    console.log(locationParts)
     if (locationParts.length <= 4 && locationParts[3] == "") {
       setTimeout(() => {
         window.scrollTo({ top: this.titleRef.getBoundingClientRect().y, behavior: "smooth" })
