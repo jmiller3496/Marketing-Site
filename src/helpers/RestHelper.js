@@ -8,7 +8,6 @@ const GetArticles = (typeId = null) => {
     return axios.get(`https://jmm-marketing-site.azurewebsites.net/API/GetArticles${typeIdString}`, {
         crossDomain: false
     }).then((response) => {
-        console.log(response.data);
         return response.data;
     });
 }
