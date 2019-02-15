@@ -23,7 +23,7 @@
     "reactify": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node index.js",
     "run": "react-scripts start | node .\\server\\main.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
