@@ -5,7 +5,7 @@ const GetArticles = (typeId = null) => {
     if(typeId){
         typeIdString = `?typeId=${typeId}`
     }
-    return axios.get(`http://localhost:8080/GetArticles${typeIdString}`, {
+    return axios.get(`https://jmm-marketing-site.azurewebsites.net/API/GetArticles${typeIdString}`, {
         crossDomain: false
     }).then((response) => {
         console.log(response.data);
