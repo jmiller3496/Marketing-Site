@@ -1,15 +1,15 @@
 import axios from "axios";
 
-function GetSchedulerData(id) {
-    return axios.get("http://localhost:7777/api/scheduler/test", {
-        // params: {
-        //     id: id
-        // },
+const GetArticles = (typeId = null) => {
+    let typeIdString = "";
+    if(typeId){
+        typeIdString = `?typeId=${typeId}`
+    }
+    return axios.get(`https://jmm-marketing-site.azurewebsites.net/API/GetArticles${typeIdString}`, {
         crossDomain: false
     }).then((response) => {
-        console.log(response.data);
         return response.data;
     });
 }
 
-export { GetSchedulerData };
+export { GetArticles };
