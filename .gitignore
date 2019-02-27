@@ -47,3 +47,5 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+
+credentials.json
