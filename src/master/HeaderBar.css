@@ -19,10 +19,15 @@
     margin: 0;
     transition: 400ms;
     background: lightsteelblue;
+    text-decoration: underline #1E1E1F;
+    color: #1E1E1F;
+    cursor: pointer;
 }
 .header-bar .header-link:hover a{
+    text-decoration: #1E1E1F;
     color:#1E1E1F;
 }
 .header-bar .header-link a{
+    text-decoration: underline #1E1E1F !important;
     color:lightsteelblue;
 }
