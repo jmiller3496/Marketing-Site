@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Panel } from 'react-bootstrap';
-import HeaderBar from './../master/HeaderBar';
+import HeaderBar from './../shared/HeaderBar/HeaderBar';
 import './IconAnimation.css';
 import './TextAnimation.css';
 import './HomePage.css';
@@ -9,30 +9,32 @@ import Gear from './../img/GearIcon.svg';
 import Shovel from './../img/ShovelIcon.svg';
 import Runner from './../img/RunnerIcon.svg';
 import Airplane from './../img/AirplaneIcon.svg';
-import HoodieSelfie from './../img/HoodieSelfieNoLogo.jpg'
+import BusinessPortrait from './../img/BusinessPortrait.jpg'
 
 class HomePage extends Component {
     render() {
         return (
             <div>
-                <HeaderBar title="JM Miller - Salaried Consultant" />
+                <HeaderBar title="JM Miller - Software Engineering Consultant" />
                 <Panel className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
                     <hr />
                     <h4>Jonathan M Miller</h4>
-                    <h5> Salaried Professional Consultant </h5>
+                    <h5> Senior Technical Consultant, Software Engineering </h5>
                     <br />
                     <div className="text-section">
-                        <div className="image-container col-lg-6" style={{ float: "left" }}>
-                            <span className="image-label" >Working late, 5AM @ CES 2019</span>
-                            <img className="" src={HoodieSelfie}></img>
-                        </div>
+                        <a href="/contact">
+                            <div className="image-container image-container offset-sm-2 offset-lg-1 col-sm-8 col-lg-4" style={{ float: "left" }}>
+                                <span className="image-label" style={{fontSize: "75%"}}>Contact me for your next project!</span>
+                                <img className="" src={BusinessPortrait}></img>
+                            </div>
+                        </a>
                         <div className="description-verb-list col-lg-6 col-sm-12" style={{ float: "left", textAlign: "left" }}>
                             <hr />
                             <span style={{ position: "absolute", width: "100%" }}>I'm Jon</span>
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="write-software">
-                                <a href="/software" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                <a href="/skills" style={{ color: 'inherit', textDecoration: 'none' }}>
                                     <span style={{ textAlign: "left", width: "100%" }}>I write software</span>
                                     &nbsp;&nbsp;
                                     <span className="UnderscoreIcon">&nbsp;</span>
@@ -41,8 +43,8 @@ class HomePage extends Component {
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="build-things">
-                                <a href="/hardware" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                    <span>I build hardware</span>
+                                <a href="/projects" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>I build things</span>
                                     &nbsp;&nbsp;
                                     <img className="GearIcon" src={Gear} />
                                     <img className="LittleGearIcon" src={Gear} />
@@ -51,15 +53,15 @@ class HomePage extends Component {
                             <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="volunteer">
-                                <a href="/give" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                    <span>I give back</span>
+                                <a href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>I solve problems</span>
                                     &nbsp;&nbsp;
                                     <img className="ShovelIcon" src={Shovel} />
                                     <span>
                                     </span>
                                 </a>
                             </span>
-                            <br />
+                            {/* <br />
                             <br />
                             <span style={{ position: "absolute", width: "100%" }} className="run-trails">
                                 <a href="/writing/fitness" style={{ color: 'inherit', textDecoration: 'none' }}>
@@ -92,7 +94,7 @@ class HomePage extends Component {
                                     </span>
                                     <br />
                                 </a>
-                            </span>
+                            </span> */}
                             <br />
                             <br />
                             <br />

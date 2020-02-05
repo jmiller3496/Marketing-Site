@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Panel } from 'react-bootstrap';
-import HeaderBar from '../master/HeaderBar';
+import HeaderBar from '../shared/HeaderBar/HeaderBar';
 import './UnderConstructionPage.css';
 import Gear from './../img/GearIcon.svg';
 
@@ -8,7 +8,7 @@ class UnderConstructionPage extends Component {
     render() {
         return (
             <div>
-                <HeaderBar title="JM Miller - Salaried Consultant" />
+                <HeaderBar title="JM Miller - Software Engineering Consultant" />
                 <Panel className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
                     <hr />
                     <h2 className="fake-tag">&lt; UnderConstruction /&gt;</h2>

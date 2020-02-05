@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "start-server": "node .\\server\\main.js",
     "run": "react-scripts start | node .\\server\\main.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
