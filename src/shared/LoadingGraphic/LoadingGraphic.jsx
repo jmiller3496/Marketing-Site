@@ -1,30 +1,26 @@
 import React, { Component } from "react";
 import { Panel } from 'react-bootstrap';
-import HeaderBar from '../shared/HeaderBar/HeaderBar';
-import './UnderConstructionPage.css';
-import Gear from './../img/GearIcon.svg';
+import './LoadingGraphic.css';
+import Gear from './../../img/GearIcon.svg';
 
-class UnderConstructionPage extends Component {
+class LoadingGraphic extends Component {
     render() {
         return (
-            <div>
-                <HeaderBar title="JM Miller - Software Engineering Consultant" />
+            <>
                 <Panel className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
-                    <hr />
-                    <h2 className="fake-tag">&lt; UnderConstruction /&gt;</h2>
+                    <h2 className="fake-tag">&lt; Loading /&gt;</h2>
                     <br />
                     <div className="text-section UnderConstruction">
                         <img className="GearIcon" src={Gear} />
                         <img className="LittleGearIcon" src={Gear} />
                         <br />
                         <br />
-                        <hr style={{width: "75%"}}/>
                         <br />
-                        <p className="center">Try back a bit later. I'm still in the middle of documenting this!</p>
+                        <p className="center">Fetching up-to-date page content...</p>
                     </div>
                 </Panel>
-            </div>
+            </>
         );
     }
 }
-export default UnderConstructionPage;
+export default LoadingGraphic;
