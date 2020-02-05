@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HeaderBar from './../master/HeaderBar';
+import HeaderBar from './../shared/HeaderBar/HeaderBar';
 import { Panel } from 'react-bootstrap';
 
 class ContactPage extends Component {
@@ -7,7 +7,7 @@ class ContactPage extends Component {
         return (
             <div>
 
-                <HeaderBar title="JM Miller - Salaried Consultant" />
+                <HeaderBar title="JM Miller - Software Engineering Consultant" />
                 <Panel className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
                     <hr />
                     <div className="text-section">
@@ -32,12 +32,12 @@ class ContactPage extends Component {
                             <address>
                                 Jon Miller
                                 <br />
-                                (412) 238-7253
+                                (412) 274-0774
                                 <br />
                                 <a href="mailto:mail@jm-miller.com"> Mail@JM-Miller.com</a>
                             </address>
                         </p>
-                        <p>Find me on <a target="_blank" href="https://www.github.com/jmiller3496">GitHub</a>!</p>
+                        <p>Find me on <a target="_blank" href="https://www.github.com/JM-Miller">GitHub</a>!</p>
                     </div>
                 </Panel>
             </div>

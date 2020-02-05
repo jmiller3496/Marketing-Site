@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HeaderBar from "./../../master/HeaderBar";
+import HeaderBar from "./../../shared/HeaderBar/HeaderBar";
 import { GetArticles } from "./../../helpers/RestHelper";
 
 class TravelWritingPage extends Component {
@@ -15,7 +15,7 @@ class TravelWritingPage extends Component {
     render(){
         return (
             <div>
-                <HeaderBar title="JM Miller - Salaried Consultant" />
+                <HeaderBar title="JM Miller - Software Engineering Consultant" />
                 <div>
                 <span>
                         {this.state.contents.map(skill => (<div key={skill.Id}>

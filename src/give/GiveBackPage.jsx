@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeaderBar from "./../master/HeaderBar";
+import HeaderBar from "./../shared/HeaderBar/HeaderBar";
 
 class GiveBackPage extends Component{
      render() {
