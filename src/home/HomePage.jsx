@@ -4,11 +4,8 @@ import HeaderBar from './../shared/HeaderBar/HeaderBar';
 import './IconAnimation.css';
 import './TextAnimation.css';
 import './HomePage.css';
-import Book from './../img/BookIcon.svg';
 import Gear from './../img/GearIcon.svg';
 import Shovel from './../img/ShovelIcon.svg';
-import Runner from './../img/RunnerIcon.svg';
-import Airplane from './../img/AirplaneIcon.svg';
 import BusinessPortrait from './../img/BusinessPortrait.jpg'
 
 function HomePage () {

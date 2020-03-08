@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
-import ReactDOM from 'react-dom';
 import { Col, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import Logo from './../../img/RHLogo.gif';
+import Link from 'react-router-dom/Link';
 import './../../../node_modules/bootstrap/dist/css/bootstrap.css'
 import './HeaderBar.css'
 
