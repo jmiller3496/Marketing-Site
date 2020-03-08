@@ -49,3 +49,4 @@ chrome-user-data
 *.swo
 
 credentials.json
+node_modules
