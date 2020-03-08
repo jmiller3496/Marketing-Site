@@ -60,40 +60,6 @@ function HomePage () {
                                 </span>
                             </a>
                         </span>
-                        {/* <br />
-                        <br />
-                        <span style={{ position: "absolute", width: "100%" }} className="run-trails">
-                            <a href="/writing/fitness" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                <span>I run races</span>
-                                &nbsp;&nbsp;
-                                <span>
-                                    <img className="RunnerIcon" src={Runner} />
-                                </span>
-                            </a>
-                        </span>
-                        <br />
-                        <br />
-                        <span style={{ position: "absolute", width: "100%" }} className="go-places">
-                            <a href="/writing/travel" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                <span>I go places</span>
-                                &nbsp;&nbsp;
-                                <span>
-                                    <img className="AirplaneIcon" src={Airplane} />
-                                </span>
-                            </a>
-                        </span>
-                        <br />
-                        <br />
-                        <span style={{ position: "absolute", width: "100%" }} className="tell-stories">
-                            <a href="/writing/stories" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                <span>I tell stories</span>
-                                &nbsp;&nbsp;
-                                <span>
-                                    <img className="BookIcon" src={Book} />
-                                </span>
-                                <br />
-                            </a>
-                        </span> */}
                         <br />
                         <br />
                         <br />

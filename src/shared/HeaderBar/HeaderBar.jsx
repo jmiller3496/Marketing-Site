@@ -34,12 +34,6 @@ function HeaderBar (props) {
         <Link to="/contact" className="header-link col-md-3 col-sm-12" >
           <span>Contact Me</span>
         </Link>
-        {/* <Link to="/give" className="header-link col-md-2 col-sm-12" >
-          <span>How I Give Back</span>
-        </Link>
-        <Link to="/contact" className="header-link col-md-2 col-sm-12" >
-          <span>Contact Me</span>
-        </Link> */}
       </Navbar>
       <Col md={12}>
         <br />
@@ -47,7 +41,6 @@ function HeaderBar (props) {
           {props.title}
         </h3>
         <br />
-        {/* <span href="https://www.roberthalf.com/work-with-us/our-services/long-term-project-consultants"><img style={{ width: "100px" }} src={Logo} /></span> */}
       </Col>
     </>
   );
