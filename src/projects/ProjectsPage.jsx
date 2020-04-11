@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HeaderBar from '../shared/HeaderBar/HeaderBar';
 import LoadingGraphic from '../shared/LoadingGraphic/LoadingGraphic';
-import { Panel } from 'react-bootstrap';
 import ArmstrongLogo from '../img/Clients/armstrong.jpeg';
 import AultcareLogo from '../img/Clients/aultcare.png';
 import BezlioLogo from '../img/Clients/bezlio.png';
@@ -15,12 +14,23 @@ import './ProjectsPage.css';
 
 function ProjectsPage () {
 
-    let [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState();
+    const [contents, setContents] = useState();
 
     //This loading screen is completely fake (until I decide to move these to Mongo or SQL)
-    setTimeout(() => {
-        setLoading(false);
-    }, 2500);
+    useEffect(() => {
+        if(!contents) {
+            setLoading(true);
+            if(loading === undefined) {
+                setLoading(true);
+                setContents(true);
+                setTimeout(() => {
+                    setLoading(false);
+                }, 2500);
+            }
+        }
+    }, [loading, contents]);
+
 
     return (
         <>
@@ -29,7 +39,7 @@ function ProjectsPage () {
                 <LoadingGraphic />
             }
             {!loading &&
-                <Panel className="page-contents-panel">
+                <div className="page-contents-panel">
                     <br/>
                     <h1>My Previous Projects and Clients</h1>
                     <div className="text-section">
@@ -199,7 +209,7 @@ function ProjectsPage () {
                             <p><i>C#.NET, ASP.NET MVC 3, SQL SCSS, CSS3, HTML5, Entity Framework, jQuery</i></p>
                         </div>
                     </div>
-                </Panel>
+                </div>
             }
         </>
     );

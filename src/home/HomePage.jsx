@@ -1,5 +1,4 @@
 import React from "react";
-import { Panel } from 'react-bootstrap';
 import HeaderBar from './../shared/HeaderBar/HeaderBar';
 import './IconAnimation.css';
 import './TextAnimation.css';
@@ -12,7 +11,7 @@ function HomePage () {
     return (
         <>
             <HeaderBar title="JM Miller - Software Engineering Consultant" />
-            <Panel className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
+            <div className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
                 <hr />
                 <h4>Jonathan M Miller</h4>
                 <h5> Senior Technical Consultant, Software Engineering </h5>
@@ -21,7 +20,7 @@ function HomePage () {
                     <a href="/contact">
                         <div className="image-container image-container offset-sm-2 offset-lg-1 col-sm-8 col-lg-4" style={{ float: "left" }}>
                             <span className="image-label" style={{fontSize: "75%"}}>Contact me for your next project!</span>
-                            <img className="" src={BusinessPortrait}></img>
+                            <img alt="Contact me for your next project!" className="" src={BusinessPortrait}></img>
                         </div>
                     </a>
                     <div className="description-verb-list col-lg-6 col-sm-12" style={{ float: "left", textAlign: "left" }}>
@@ -42,8 +41,8 @@ function HomePage () {
                             <a href="/projects" style={{ color: 'inherit', textDecoration: 'none' }}>
                                 <span>I build things</span>
                                 &nbsp;&nbsp;
-                                <img className="GearIcon" src={Gear} />
-                                <img className="LittleGearIcon" src={Gear} />
+                                <img alt="Animated Gear Icon" className="GearIcon" src={Gear} />
+                                <img alt="Animated Gear Icon" className="LittleGearIcon" src={Gear} />
                             </a>
                         </span>
                         <br />
@@ -52,7 +51,7 @@ function HomePage () {
                             <a href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>
                                 <span>I solve problems</span>
                                 &nbsp;&nbsp;
-                                <img className="ShovelIcon" src={Shovel} />
+                                <img alt="Animated Shovel Icon" className="ShovelIcon" src={Shovel} />
                                 <span>
                                 </span>
                             </a>
@@ -66,10 +65,11 @@ function HomePage () {
                     </div>
                     <div className="text-blurb " style={{ padding: "2%", float: "left" }} >
                         <br />
-                        <p style={{ paddingLeft: "0%" }}>
+                        <div style={{ paddingLeft: "0%", textAlign: "left" }}>
+                            <br />
                             <h5>Well, hello there!</h5>
                             If you're reading this, then there's a pretty good chance that either you know me and my work, or you might want to work with me in the future. Or maybe you're just an intrepid internet scuba diver at the end of a long trail of purple hyperlinks.
-                        </p>
+                        </div>
                         <p style={{ margin: "0%" }}>
                         </p>
                         <p style={{ margin: "0%" }}>
@@ -86,7 +86,7 @@ function HomePage () {
                         </div>
                     </div>
                 </div>
-            </Panel>
+            </div>
         </>
     )
 }

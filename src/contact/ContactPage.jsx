@@ -1,17 +1,17 @@
 import React from "react";
 import HeaderBar from './../shared/HeaderBar/HeaderBar';
-import { Panel } from 'react-bootstrap';
 
 function ContactPage() {
     return (
         <>
             <HeaderBar title="JM Miller - Software Engineering Consultant" />
-            <Panel className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
+            <div className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
                 <hr />
                 <div className="text-section">
                     <h4>Contact Me</h4>
                     <hr style={{ width: '15em' }} />
-                    <p>
+                    <div style={{ textAlign: "left" }}>
+                        <br />
                         For any work-related questions or comments, contact me via email:
                         <br />
                         <address>
@@ -23,21 +23,20 @@ function ContactPage() {
                             <br />
                             <a href="mailto:jonathan.miller@rhsps.com">Jonathan.Miller@RHSPS.com</a>
                         </address>
-                    </p>
-                    <p>
+                    </div>
+                    <div style={{ textAlign: "left" }}>
+                        <br />
                         For personal contact, or for any questions or comments unrelated to my work as a Technical Consultant:
                         <br />
                         <address>
                             Jon Miller
                             <br />
-                            (412) 274-0774
-                            <br />
                             <a href="mailto:mail@jm-miller.com"> Mail@JM-Miller.com</a>
                         </address>
-                    </p>
-                    <p>Find me on <a target="_blank" href="https://www.github.com/JM-Miller">GitHub</a>!</p>
+                    </div>
+                    <p>Find me on <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/JM-Miller">GitHub</a>!</p>
                 </div>
-            </Panel>
+            </div>
         </>
     );
 }

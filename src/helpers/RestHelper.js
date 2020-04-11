@@ -9,6 +9,8 @@ const GetArticles = (typeId = null) => {
         crossDomain: false
     }).then((response) => {
         return response.data;
+    }).catch((error) => {
+        return error;
     });
 }
 

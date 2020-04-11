@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
-import { Col, Navbar } from 'react-bootstrap';
-import Link from 'react-router-dom/Link';
+import { Link } from 'react-router-dom';
 import './../../../node_modules/bootstrap/dist/css/bootstrap.css'
 import './HeaderBar.css'
 
@@ -9,7 +8,7 @@ function HeaderBar (props) {
   const titleRef = useRef(null);
 
   const locationParts = window.location.href.split('/');
-  if (locationParts.length <= 4 && locationParts[3] == "") {
+  if (locationParts.length <= 4 && locationParts[3] === "") {
     setTimeout(() => {
       if(titleRef.current) {
         window.scrollTo({ top: titleRef.current.getBoundingClientRect().y, behavior: "smooth" })
@@ -19,7 +18,7 @@ function HeaderBar (props) {
 
   return (
     <>
-      <Navbar className="header-bar nav">
+      <div className="header-bar nav">
         <Link to="/about" className="header-link col-md-3 col-sm-12" >
           <span>About Me</span>
         </Link>
@@ -32,14 +31,14 @@ function HeaderBar (props) {
         <Link to="/contact" className="header-link col-md-3 col-sm-12" >
           <span>Contact Me</span>
         </Link>
-      </Navbar>
-      <Col md={12}>
+      </div>
+      <div style={{width: "100%"}}>
         <br />
         <h3 id="page-title" ref={titleRef}>
           {props.title}
         </h3>
         <br />
-      </Col>
+      </div>
     </>
   );
 }
