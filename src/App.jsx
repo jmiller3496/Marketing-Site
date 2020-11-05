@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
 import Routes from "./Routes";
 import { BrowserRouter as Router } from "react-router-dom"
 import styles from './../node_modules/bootstrap/dist/css/bootstrap.css';
+import './App.css';
 
-class App extends Component {
-  render() {
+function App () {
     return (
       <div className="App" style={styles.App}>
           <Router>
-            <div>
+            <>
               <Routes className="navbar" />
-            </div>
+            </>
           </Router>
       </div>
     );
-  }
 }
 
 export default App;
