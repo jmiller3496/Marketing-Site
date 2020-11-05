@@ -47,7 +47,7 @@ function ProjectsPage () {
                             <hr />
                             <a href="https://www2.deloitte.com/us/en.html">
                                 <br/><img style={{maxWidth:"150px"}} src={DeloitteLogo} alt="Deloitte" /> <br/> <br/> 
-                            </a><a href="https://www2.deloitte.com/us/en.html"><h2>THREAT INTELLEGENCE ANALYTICS, DELOITTE</h2></a>
+                            </a><a href="https://www2.deloitte.com/us/en.html"><h2>THREAT INTELLIGENCE ANALYTICS, DELOITTE</h2></a>
                             <br/>
                             <h4>CyArc Threat Hunt UI</h4>
                             <p>
@@ -118,7 +118,7 @@ function ProjectsPage () {
                                 <br/><img style={{maxWidth:"150px"}} src={ArmstrongLogo} alt="Armstrong OneWire" /> <br/> <br/> 
                             </a>
                             <a href="https://armstrongonewire.com/"><h2>ARMSTRONG CABLE</h2></a><br/>
-                            <h4>Workday Integration </h4>
+                            <h4>Workday Integration</h4>
                             <p>
                                 Created a scheduled task to automatically read CSV files from a server location, parse them into a SQL table, perform a few data manipulation operations on them, then output them into an XLSX template with labeled fields for each column, which was provided by WorkDay
                                 <br />
