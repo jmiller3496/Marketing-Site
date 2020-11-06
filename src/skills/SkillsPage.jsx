@@ -7,10 +7,13 @@ function SkillsPage() {
         <>
             <HeaderBar title="JM Miller - Software Engineering Consultant" />
                 <div className="page-contents-panel">
+                    <h1>My Skillset</h1>
                     <div className="text-section">
+                        <div className="col-md-8 offset-2" style={{ float: "left", width: "68%", margin: "0 16%" }}>
+                            <p className="center">&nbsp;&nbsp;&nbsp;Find me on <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/JM-Miller">GitHub</a>!</p>
+                            <hr />
+                        </div>
                         <div className="skill-score-list">
-                            <p className="center">Find me on <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/JM-Miller">GitHub</a>!</p>
-                            <br />
                             <div>
                                 <br />
                                 <img src={`${process.env.PUBLIC_URL}/img/PluralSight/Angular.PNG`} alt="80th Percentile in Angular / 70th Percentile in CSS / 94th Percentile in HTML5" />
