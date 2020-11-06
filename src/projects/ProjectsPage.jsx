@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import HeaderBar from '../shared/HeaderBar/HeaderBar';
-import LoadingGraphic from '../shared/LoadingGraphic/LoadingGraphic';
 import ArmstrongLogo from '../img/Clients/armstrong.jpeg';
 import AultcareLogo from '../img/Clients/aultcare.png';
 import BezlioLogo from '../img/Clients/bezlio.png';
@@ -13,32 +12,9 @@ import SRSLogo from '../img/Clients/slaterocksafety.jpg';
 import './ProjectsPage.css';
 
 function ProjectsPage () {
-
-    const [loading, setLoading] = useState();
-    const [contents, setContents] = useState();
-
-    //This loading screen is completely fake (until I decide to move these to Mongo or SQL)
-    useEffect(() => {
-        if(!contents) {
-            setLoading(true);
-            if(loading === undefined) {
-                setLoading(true);
-                setContents(true);
-                setTimeout(() => {
-                    setLoading(false);
-                }, 2500);
-            }
-        }
-    }, [loading, contents]);
-
-
     return (
         <>
             <HeaderBar title="JM Miller - Software Engineering Consultant" />
-            {loading &&
-                <LoadingGraphic />
-            }
-            {!loading &&
                 <div className="page-contents-panel">
                     <br/>
                     <h1>My Previous Projects and Clients</h1>
@@ -84,7 +60,7 @@ function ProjectsPage () {
                             <p>Implemented Microsoft Azure Image processing AI to capture, read, and submit Scores from a variety of 3rd party Virtual Shooting range applications</p>
                             <p><i>C#, Azure AI Image Processing </i></p>
                             <hr />
-                            <a href="https://www.deeplocal.com/">
+                            <a id="deeplocal" href="https://www.deeplocal.com/">
                                 <br/><img style={{maxWidth:"150px"}} src={DeeplocalLogo} alt="Deeplocal" /> <br/> <br/> 
                             </a>
                             <a href="https://www.deeplocal.com/"><h2 id="deeplocal">CES 2019, DEEPLOCAL</h2></a><br/>
@@ -114,7 +90,7 @@ function ProjectsPage () {
                             </p>
                             <p><i>Node.js, JavaScript ES6, Serial-Port, Ubuntu Shell, Google Chrome </i></p>
                             <hr />
-                            <a href="https://armstrongonewire.com/">
+                            <a id="armstrong" href="https://armstrongonewire.com/">
                                 <br/><img style={{maxWidth:"150px"}} src={ArmstrongLogo} alt="Armstrong OneWire" /> <br/> <br/> 
                             </a>
                             <a href="https://armstrongonewire.com/"><h2>ARMSTRONG CABLE</h2></a><br/>
@@ -210,7 +186,6 @@ function ProjectsPage () {
                         </div>
                     </div>
                 </div>
-            }
         </>
     );
 }
