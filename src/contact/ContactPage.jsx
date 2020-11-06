@@ -6,10 +6,12 @@ function ContactPage() {
         <>
             <HeaderBar title="JM Miller - Software Engineering Consultant" />
             <div className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
-                <hr />
                 <div className="text-section">
+                    <br />
                     <h4>Contact Me</h4>
-                    <hr style={{ width: '15em' }} />
+                    <div className="col-md-8 offset-2" style={{ float: "left", width: "68%", margin: "0 16%" }}>
+                        <hr />
+                    </div>
                     <div style={{ textAlign: "left" }}>
                         <br />
                         For any work-related questions or comments, contact me via email:
