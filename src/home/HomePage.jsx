@@ -14,7 +14,7 @@ function HomePage () {
             <div className="page-contents-panel" style={{ float: "left", width: "68%", margin: "0 16%" }}>
                 <hr />
                 <h4>Jonathan M Miller</h4>
-                <h5> Senior Technical Consultant, Software Engineering </h5>
+                <h5> Lead Technical Consultant, Software Engineering </h5>
                 <br />
                 <div className="text-section">
                     <a href="/contact">
