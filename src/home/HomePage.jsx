@@ -68,13 +68,11 @@ function HomePage () {
                         <div style={{ paddingLeft: "0%", textAlign: "left" }}>
                             <br />
                             <h5>Well, hello there!</h5>
-                            If you're reading this, then there's a pretty good chance that either you know me and my work, or you might want to work with me in the future. Or maybe you're just an intrepid internet scuba diver at the end of a long trail of purple hyperlinks.
+                            My name is Jon Miller. I'm a Hobbyist engineer, endurance runner, Pluralsight binge-watcher, Full Stack Software Engineer and Lead Technical Consultant.
                         </div>
                         <p style={{ margin: "0%" }}>
-                        </p>
-                        <p style={{ margin: "0%" }}>
-                            In any case, I'm glad you're here. I hope you'll stay a while and take a look at the work I've done, the places I've been, and the stories I've told.
-                    </p>
+                            I pride myself in efficient, effective, and measurably beneficial work done for my clients and myself, and I'm continually striving toward growth in my professional and personal life.
+                        </p>        
                         <div className="hyperlink">
                             <a href="/contact" className="stylized-underline">
                                 <div>
